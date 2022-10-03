@@ -8,10 +8,12 @@
 --primary-text-color: #757575;
 --title-text-color: #212121;
 --primary-white-color: #fff;
+--secondary-btn-color: #EEEEEE;
+--secondary-bg-color: #f5f4fa;
 
 }
 body {
-font-family: 'Roboto', 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
 color: var(--title-text-color);
 background-color: var(--primary-white-color);
 }
@@ -36,7 +38,7 @@ header {
 }
 .logo {
 color: var(--accent-color);
-font-family: 'Raleway';
+font-family: 'Raleway', sans-serif;
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
@@ -63,7 +65,6 @@ color: var(--accent-color);
 .link-info {
 color: var(--primary-text-color);
 font-weight: 500;
-font-style: normal;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
@@ -88,15 +89,17 @@ font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
 letter-spacing: 0.06em;
+text-transform: uppercase;
 }
 .hero-btn {
-font-family: 'Roboto';
+font-family: inherit;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.06em;
 background-color: #2196f3;
 color: var(--primary-white-color);
+cursor: pointer;
 }
 .hero-btn:hover {
 background: #188CE8;
@@ -114,6 +117,7 @@ font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
+text-transform: uppercase;
 }
 .features-text{
 color: var(--primary-text-color);
@@ -124,7 +128,6 @@ letter-spacing: 0.03em;
 }
 /* Work */
 .work-title{
-font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
 letter-spacing: 0.03em;
@@ -132,10 +135,9 @@ letter-spacing: 0.03em;
 
 /* Team */
 .team{
-    background-color: #f5f4fa;
+    background-color: var(--secondary-bg-color);
 }
 .team-title{
-font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
 letter-spacing: 0.03em;
@@ -172,12 +174,6 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 text-decoration: none;
 }
-.link-address:hover{
-    color: var(--accent-color);
-}
-.link-address:focus{
-    color: var(--accent-color);
-}
 .link-info-footer{
 color: rgba(255, 255, 255, 0.6);
 font-weight: 500;
@@ -187,12 +183,18 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 text-decoration: none;
 }
+.link-info-footer:hover{
+    color: var(--accent-color);
+}
+.link-info-footer:focus{
+    color: var(--accent-color);
+}
 
 /* Portfolio */
 .btn-nav{
 color: var(--title-text-color);
-background-color: #b9b8b8;
-font-family: 'Roboto';
+background-color: var(--secondary-btn-color);
+font-family: inherit;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
@@ -211,7 +213,6 @@ color: var(--primary-white-color);
 }
 .project-title{
 color: var(--title-text-color);
-font-weight: 700;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
